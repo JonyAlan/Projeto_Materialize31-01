@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Materialize</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="css/materialize.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <style type="text/css" media="screen">
+    
+    h6{
+        width: 100%;
+    }
+    </style>
+
+</head>
+
+<body>
+
+        <ul id="slide-out" class="sidenav">
+                <li><div class="user-view">
+                  <a href="#user"><img class="screen" src="media/homer.jpg"></a>
+                  <a href="#name"><span class="black-text name"> &nbsp; John Doe</span></a>
+                  <a href="#email"><span class="black-text email">jdandturk@gmail.com</span></a>
+                </div></li>
+                <li><a href="materializeMenFix.html"><i class="material-icons">home</i>Início</a></li>
+                <li><a href="materialize.html"><i class="material-icons"> account_box</i>Cadastro</a></li>
+                <li><a href="materializeTable.html"><i class="material-icons">store</i>Planos</a></li>
+                <li><div class="divider"></div></li>
+                <li><a class="subheader">Chat Online</a></li>
+                <li><a class="waves-effect" href="#!">RH</a></li>
+                <li><a class="waves-effect" href="#!">Fiscal</a></li>
+                <li><a class="waves-effect" href="#!">Financeiro</a></li>
+                <li><a class="waves-effect" href="#!">Contabilidade<span class="new badge red notification" data-badge-caption="">3</span></a></li>
+                <li><a class="waves-effect" href="#!">Logística e Serviços</a></li>
+                <li><a class="waves-effect" href="#!">legalização de Empresa</a></li>
+              </ul>
+
+
+              <div class="container">
+                    <div class="card-panel blue darken-1  z-depth-5"> <!-- z-depth-5 = sombra  -->
+                         <h5>  <span class="white-text text-darken-1 truncate">Site com Materialize</span></h5> <!--truncate = .../espaço insuficiente  -->
+                         <a href="#" data-activates="slide-out" class="button-collapse right white-text text-darken-1"><i class="material-icons">menu</i></a>
+            
+                        </div>
+                  
+          <div class="divider"></div><!-- linha de divisão  -->
+
+        <!--
+
+             <div class="row ">
+
+            <div class="col s3 m3 l3 blue lighten-5  hoverable " >< hoverable = destaque pulse pulsar  
+                     <h6 class="center-align"><a href="materializeTable.html">Tabelas</a></h6>
+            </div>
+
+            <div class="col s3 m3 l3 blue lighten-3  hoverable ">
+                    <h6 class="center-align"><a href="materializeMenFix.html">Menu 2</a></h6>
+            </div>
+
+            <div class="col s3 m3 l3 blue lighten-5  hoverable ">
+                    <h6 class="center-align">Menu 3</h6>
+            </div>
+
+            <div class="col s3 m3 l3 blue lighten-3  hoverable "><!-- tamanho da tela dos dipositivos(S = Small/m = medium/ l = larger)  
+                <h6 class="center-align">Menu 4</h6>
+             </div>
+
+          <!--   <div class="col offset-s5 s3 blue">  offset = deslocamento  
+                Menu 4
+                 </div> 
+        </div>
+        <p>Fundada em Janeiro de 1999 com a missão de satisfazer o cliente e ser uma das melhores empresas de contabilidade, a Espaço Contabilidade adquiriu vasta experiência na área contábil, construída sobre qualidades fundamentais com: honestidade, seriedade, comprometimento e respeito, atendendo com eficiência obrigações dentro dos prazos, tendo um tenro cuidado com os serviços designados.
+                <blockquote> Espaço Contabilidade adquiriu vasta experiência na área contábil, construída sobre qualidades fundamentais com: honestidade, seriedade, comprometimento e respeito.</p>
+                </blockquote>    <!-- Bloco de citação 
+    
+    
+        <div class="row">
+              <!-- <div vclass="col  offset-s3 s6 hide-on-small-only">  
+            <div class="col  offset-s3 s6">        
+            <img class="responsive-img circle center  hoverable  z-depth-3 " src="media/universo.jpg">
+            </div>
+
+        </div> -->
+       
+        <div class="row">
+        </div>
+        <div class="row">
+            </div>
+        <div class="row">
+            <form class="col s12">
+              <div class="row">
+                <div class="input-field col s6">
+                  <i class="material-icons prefix">account_circle</i>
+                  <input placeholder="João" id="PrimeiroNome" type="text" class="validate">
+                  <label for="PrimeiroNome">Primeiro Nome</label>
+                </div>
+                <div class="input-field col s6">
+                  <input id="SegundNome" type="text" class="validate">
+                  <label for="SegundNome">Segundo Nome</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s6 m6 l6">
+                   <i class="material-icons prefix">account_circle</i>
+                  <input disabled value="Não escrever" id="disabled" type="text" class="validate">
+                  <label for="disabled">Login de usuário</label>
+                </div>
+                    <div class="input-field text col s6 m6 l6">
+                        <i class="material-icons prefix">calendar_today</i>
+                        <input type="text" class="datepicker">
+                    <label for="date">Aniversario</label>
+              </div>
+            </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <i class="material-icons prefix">https</i>
+                  <input id="password" type="password" class="validate">
+                  <label for="password">Password</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                        <i class="material-icons prefix">email</i>
+                  <input type="email" name="email" id="email" value="" class="validate">
+                  <label for="email" data-error="E-mail valido!!!" data-success="E-mail invalido!!!">Email</label>
+                </div>
+              </div>
+              <div class="row">
+              <div class="col s12">
+              <div class="input-field col s12">
+                    <select>
+                      <option value="" disabled selected>Selecione o Sexo</option>
+                      <option value="1">M</option>
+                      <option value="2">F</option>
+                    </select>
+                  </div>
+                </div>
+                </div>
+              <div class="row">
+                <div class="col s12">
+                  Confirmação de Email:
+                  <div class="input-field inline">
+                    <input id="email_inline" type="email" class="validate">
+                    <label for="email_inline">Email</label>
+                    <span class="helper-text" data-error="Email invalido!!!" data-success="Email confirmado">Vaidação</span>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+
+          
+          <form action="#">
+                <div class="file-field input-field">
+                  <div class="btn fileBtn">
+                    <span>RG e CPF</span>
+                    <input type="file" multiple>
+                  </div>
+                  <div class="file-path-wrapper">
+                    <input class="file-path validate" type="text" placeholder="Upload 1 ou mais arquivos">
+                  </div>
+                </div>
+              </form>
+            
+            </div>
+
+
+            <div class="row "></div>
+            <div class="row "></div>
+
+
+          <div class="row ">
+
+                <div class="col s2 m2 l2"></div>
+
+                <div class="col s3 m3 l3 blue lighten-4  hoverable btnCad " ><!-- hoverable = destaque pulse pulsar  -->
+                         <h6 class="center-align"><a href="#">Salvar</a></h6>
+                </div>
+
+                <div class="col s2 m2 l2"></div>
+
+                <div class="col s3 m3 l3 blue lighten-3 hoverable btnCad">
+                        <h6 class="center-align"><a href="#">Limpar</a></h6>
+                </div>
+                
+
+    </div>
+
+    <div class="container">
+    <footer class="page-footer blue darken-3">
+            
+              <div class="row">
+                <div class="col  s6 m6 l6">
+                  <h5 class="white-text">Footer Content</h5>
+                  <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+                </div>
+                <div class="col s6 m6 l6 ">
+                  <h5 class="white-text">Links</h5>
+                  <ul>
+                    <li><a class="grey-text text-lighten-3" href="#!"></a></li>
+                    <li><a class="grey-text text-lighten-3" href="#!">Contabilidade</a></li>
+                    <li><a class="grey-text text-lighten-3" href="#!">Logística e Serviços</a></li>
+                    <li><a class="grey-text text-lighten-3" href="#!">legalização de Empresa</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="footer-copyright">
+              <div class="col s6 m6 l6 right">
+              © 2019 Copyright 
+              <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+              </div>
+            </div>
+          </footer>
+
+
+  
+
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+<!-- Compiled and minified JavaScript -->
+<script src="js/materialize.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+<script type="text/javascript">
+  $(".button-collapse").sideNav();
+  $('select').formSelect();
+</script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.datepicker');
+    var datepicker_pt_br = {
+    today: 'Hoje', clear: 'Limpar', done: 'Ok', nextMonth: 'Próximo mês', previousMonth: 'Mês anterior', weekdaysAbbrev: ['D', 'S', 'T', 'Q', 'Q', 'S', 'S'], weekdaysShort: ['Dom', 'Seg', 'Ter', 'Qua', 'Qui', 'Sex', 'Sáb'], weekdays: ['Domingo', 'Segunda-Feira', 'Terça-Feira', 'Quarta-Feira', 'Quinta-Feira', 'Sexta-Feira', 'Sábado'], monthsShort: ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez'], months: ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro']
+}
+var option = {
+    container: 'body',
+    showDaysInNextAndPreviousMonths: true,
+    i18n: datepicker_pt_br,
+ }
+    var instances = M.Datepicker.init(elems, option);
+  });
+</script>
+</body>
+</html>
